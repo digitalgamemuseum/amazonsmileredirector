@@ -1,0 +1,9 @@
+{
+  "name": "amazon-smile-redirect",
+  "title": "Amazon Smile Redirect",
+  "id": "jid1-VgrLFatWWJY3DA",
+  "description": "Redirects Amazon URLs to Amazon Smile",
+  "author": "T. Scott Barnes <barnes.t.scott@gmail.com>",
+  "license": "GPL 2.0",
+  "version": "0.1.0"
+}

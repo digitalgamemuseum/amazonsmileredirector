@@ -1,0 +1,20 @@
+{
+  "name": "Amazon Smile Redirect",
+  "description": "Redirect Amazon URLs to Amazon Smile",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "author": "T. Scott Barnes <barnes.t.scott@gmail.com>",
+  "permissions": [
+  	"webRequest",
+  	"webRequestBlocking",
+    "*://*.amazon.com/*",
+    "*://*.amazon.co.uk/*",
+    "*://*.amazon.co.jp/*"
+  ],
+  "background": {
+  	"scripts": [
+  		"background.js"
+  	],
+  	"persistent": true
+  }
+}
