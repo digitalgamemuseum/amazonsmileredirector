@@ -10,6 +10,6 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
     redirectUrl: redirectTo
   };
 }, {
-  urls: ["*://*.amazon.com/*"],
+  urls: ["*://amazon.com/*", "*://www.amazon.com/*"],
   types: ["main_frame"]
 }, ['blocking']);
