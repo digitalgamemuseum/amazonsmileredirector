@@ -10,6 +10,10 @@ function listener(event) {
     // we don't want to check isPrivate() for non-amazon, so just exit here
     return;
   }
+  if(event.subject.referrer.spec.match(/.*:\/\/smile\.amazon\.com\/.*/)) {
+    // prevent redirect loop for non-logged in users
+    return;
+  }
   if(isPrivate(getDispatchingWindow(event))) {
     return;
   }
